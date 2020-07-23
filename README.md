@@ -19,11 +19,11 @@ As there are no null values in the attributes and there are no categorical value
 The number of fraudulent and non fraudulent cases are found using value_counts().values[] and it is found that the number of fraudulent cases are very less in comparison to the non fraudulent cases. So the dataset is imbalanced, hence even if the dataset is trained using multiple algorithms, the result will be accurate as fraud cases are very less, which is not the correct method to predict the data present in the dataset. It is also found that the greatest amount of normal transactions is around 25,000 euro, while the greatest amount of fraud is around 2000 euro.
 Hence the dataset is divided into input features X and output labels y, and train and test sets are formed for evaluating and testing the models at a ratio of 80:20
 To prevent imbalance of data, ADASYN oversampler is used and fed into the X_train and y_train sets
-The correlation heat map is displayed to find out the relationship among the different attributes
+The correlation heat map is displayed to find out the relationship among the different attributes.
 
 # Training Models
 Then the dataset is trained by evaluating the cross validation score using different models like SGD Classifier, Logistic Regression, Random Forest Classifier, Decision Tree Classifier, and XGB Classifier.
-According to the cross validation scores, the Random Forest Classifier, Decision Classifier and the XGB Classifier performed well on training data
+According to the cross validation scores, the Random Forest Classifier, Decision Classifier and the XGB Classifier performed well on training data.
 
 # Test Models
 After evaluating the models, the test models are implemented using different models like SGD Classifier, Linear Regression, Logistic Regression, Random Forest Classifier, Decision Tree Classifier, and XGB Classifier.
