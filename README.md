@@ -13,8 +13,8 @@ Amount: Transaction amount in Euro
 
 Class: The actual classfication classes (0 = Normal transaction, 1 = Fraud) 
 
-The Time and Amount coloumns have to be standardised to bring them to a same scale as V1-V28. Hence StandardScaler is used.
-Then the shape of the dataset is found out- 284807 rows and 31 coloumns. The info regarding the dataset is also displayed, where all the columns are non-null.
+The Time and Amount columns have to be standardised to bring them to a same scale as V1-V28. Hence StandardScaler is used.
+Then the shape of the dataset is found out- 284807 rows and 31 columns. The info regarding the dataset is also displayed, where all the columns are non-null.
 As there are no null values in the attributes and there are no categorical values prersent, the dataset is not filled with median values and dummy variables are also not used.
 The number of fraudulent and non fraudulent cases are found using value_counts().values[] and it is found that the number of fraudulent cases are very less in comparison to the non fraudulent cases. So the dataset is imbalanced, hence even if the dataset is trained using multiple algorithms, the result will be accurate as fraud cases are very less, which is not the correct method to predict the data present in the dataset. It is also found that the greatest amount of normal transactions is around 25,000 euro, while the greatest amount of fraud is around 2000 euro.
 Hence the dataset is divided into input features X and output labels y, and train and test sets are formed for evaluating and testing the models at a ratio of 80:20
